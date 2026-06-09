@@ -136,3 +136,24 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+.book-cover {
+  display: block;
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 22px;
+  box-shadow: 0 10px 24px rgba(16, 32, 51, 0.18);
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #b77a1d;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
