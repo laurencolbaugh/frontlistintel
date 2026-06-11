@@ -173,3 +173,171 @@ h2 {
     width: 160px;
   }
 }
+.home-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 36px 24px 60px;
+  text-align: center;
+}
+
+.home-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #ddd4c3;
+  background: #f7f3eb;
+  margin: 30px auto 50px;
+}
+
+.hero-image {
+  width: 100%;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  left: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 430px;
+  text-align: left;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 2.7rem;
+  line-height: 1.12;
+  margin: 0 0 18px;
+  color: #102236;
+}
+
+.hero-text p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #102236;
+  margin-bottom: 26px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.primary-button {
+  background: #0f2235;
+  color: #ffffff;
+}
+
+.secondary-button {
+  border: 1px solid #0f2235;
+  color: #0f2235;
+  background: rgba(255,255,255,0.7);
+}
+
+.intro-section {
+  max-width: 760px;
+}
+
+.feature-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  max-width: 1000px;
+}
+
+.feature-card {
+  border: 1px solid #ddd4c3;
+  background: #fffaf1;
+  padding: 26px 22px;
+  text-align: left;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: #102236;
+}
+
+.report-preview {
+  max-width: 940px;
+}
+
+.preview-covers {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin: 28px 0;
+}
+
+.cover-placeholder {
+  width: 145px;
+  height: 220px;
+  border: 1px solid #d6cbb9;
+  background: #f4efe6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #786b5a;
+  font-size: 0.9rem;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.audience-section {
+  max-width: 760px;
+}
+
+.subscribe-callout {
+  max-width: 860px;
+  background: #102236;
+  color: #ffffff;
+  padding: 42px 34px;
+}
+
+.subscribe-callout h2,
+.subscribe-callout p {
+  color: #ffffff;
+}
+
+.subscribe-callout .primary-button {
+  background: #b87916;
+  color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  .hero-text {
+    position: static;
+    transform: none;
+    max-width: none;
+    padding: 34px 26px;
+    text-align: center;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .feature-section {
+    grid-template-columns: 1fr;
+  }
+}
