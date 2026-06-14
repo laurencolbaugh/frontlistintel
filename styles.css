@@ -478,3 +478,74 @@ footer {
     }
 
 }
+/* ===== Methodology Accordion Updates ===== */
+
+.methodology-accordion {
+  max-width: 900px;
+  margin: 56px auto;
+}
+
+.methodology-accordion details {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  margin-bottom: 18px;
+  box-shadow: 0 8px 18px rgba(15, 34, 53, 0.07);
+}
+
+.methodology-accordion summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 24px 30px;
+  font-family: Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--navy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.methodology-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.methodology-accordion summary::after {
+  content: "+";
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--gold);
+}
+
+.methodology-accordion details[open] summary::after {
+  content: "–";
+}
+
+.methodology-accordion summary:hover {
+  background: #f1eadf;
+  color: var(--gold);
+}
+
+.process-step {
+  padding: 30px;
+  border-top: 1px solid var(--border);
+  text-align: left;
+}
+
+.process-step + .process-step {
+  border-top: 1px solid var(--border);
+}
+
+.process-step h2 {
+  font-size: 1.75rem;
+  margin-bottom: 14px;
+}
+
+.process-step p {
+  max-width: 760px;
+}
+
+.methodology-accordion .eyebrow {
+  margin-bottom: 8px;
+}
