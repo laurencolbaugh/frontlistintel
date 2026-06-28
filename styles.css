@@ -640,31 +640,28 @@ footer {
   min-height: auto;
   margin-top: 0;
 }
-/* ===== Front List Card Alignment ===== */
+/* ===== Front List Card Structure ===== */
 
 .front-list-grid .title-card {
   display: grid;
-  grid-template-rows:
-    24px      /* Badge */
-    210px     /* Cover */
-    130px     /* Title */
-    24px      /* Author */
-    140px     /* Premise */
-    48px      /* "Why it caught our attention" */
-    auto;     /* Bullet list */
-
-  row-gap: 16px;
+  grid-template-rows: auto 430px 150px 1fr;
+  row-gap: 18px;
 }
 
 .front-list-grid .badge {
   margin: 0;
-  align-self: start;
 }
 
-.front-list-grid .title-card > a:first-of-type {
+.front-list-grid .card-header {
+  display: grid;
+  grid-template-rows: 200px 150px 24px;
+  row-gap: 14px;
+}
+
+.front-list-grid .card-header > a:first-child {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .front-list-grid .book-cover {
@@ -675,13 +672,26 @@ footer {
 }
 
 .front-list-grid .title-card h2,
-.front-list-grid .title-card .meta,
-.front-list-grid .title-card > p:not(.meta),
-.front-list-grid .title-card h3 {
-  margin: 0;
+.front-list-grid .title-card h3,
+.front-list-grid .title-card p,
+.front-list-grid .title-card ul {
+  margin-top: 0;
 }
 
-.front-list-grid .title-card ul {
-  margin: 0;
-  padding-left: 22px;
+.front-list-grid .card-summary {
+  min-height: 150px;
+}
+
+.front-list-grid .card-observations h3 {
+  min-height: 44px;
+}
+
+.front-list-grid .title-card h2 a,
+.front-list-grid .title-card .meta a {
+  text-decoration: none;
+}
+
+.front-list-grid .title-card h2 a:hover,
+.front-list-grid .title-card .meta a:hover {
+  color: var(--gold);
 }
