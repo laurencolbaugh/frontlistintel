@@ -612,6 +612,18 @@ footer {
   flex-direction: column;
 }
 
+.front-list-grid .title-card > a:first-of-type {
+  min-height: 210px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.front-list-grid .book-cover {
+  max-height: 190px;
+  width: auto;
+}
+
 .front-list-grid .title-card h2 {
   min-height: 4.8em;
 }
