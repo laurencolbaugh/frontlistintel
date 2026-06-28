@@ -640,3 +640,48 @@ footer {
   min-height: auto;
   margin-top: 0;
 }
+/* ===== Front List Card Alignment ===== */
+
+.front-list-grid .title-card {
+  display: grid;
+  grid-template-rows:
+    24px      /* Badge */
+    210px     /* Cover */
+    130px     /* Title */
+    24px      /* Author */
+    140px     /* Premise */
+    48px      /* "Why it caught our attention" */
+    auto;     /* Bullet list */
+
+  row-gap: 16px;
+}
+
+.front-list-grid .badge {
+  margin: 0;
+  align-self: start;
+}
+
+.front-list-grid .title-card > a:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-list-grid .book-cover {
+  width: auto;
+  max-width: 150px;
+  max-height: 190px;
+  margin: 0;
+}
+
+.front-list-grid .title-card h2,
+.front-list-grid .title-card .meta,
+.front-list-grid .title-card > p:not(.meta),
+.front-list-grid .title-card h3 {
+  margin: 0;
+}
+
+.front-list-grid .title-card ul {
+  margin: 0;
+  padding-left: 22px;
+}
