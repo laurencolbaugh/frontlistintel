@@ -571,3 +571,6 @@ footer {
 .policy-box p:last-child {
   margin-bottom: 0;
 }
+.title-card h3 {
+  min-height: 3.2em;
+}
