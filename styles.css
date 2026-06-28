@@ -36,6 +36,10 @@ a {
 }
 
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   max-width: 1100px;
   margin: 0 auto;
   padding: 22px 24px;
@@ -43,6 +47,9 @@ nav {
   justify-content: center;
   gap: 34px;
   border-bottom: 1px solid var(--border);
+  background: var(--ivory);
+  box-shadow: 0 2px 8px rgba(15, 34, 53, 0.06);
+
   font-family: Arial, sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
@@ -573,4 +580,28 @@ footer {
 }
 .title-card h3 {
   min-height: 3.2em;
+}
+/* ===== Launch Polish ===== */
+
+.issue-week {
+  font-size: 1rem;
+  letter-spacing: 0.18em;
+}
+
+.title-card h2 a,
+.title-card .meta a {
+  text-decoration: none;
+}
+
+.title-card h2 a:hover,
+.title-card .meta a:hover {
+  color: var(--gold);
+}
+
+.title-card h2 {
+  min-height: 2.8em;
+}
+
+.title-card .meta {
+  min-height: 1.6em;
 }
