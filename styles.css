@@ -605,3 +605,26 @@ footer {
 .title-card .meta {
   min-height: 1.6em;
 }
+/* Front List card alignment */
+
+.front-list-grid .title-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.front-list-grid .title-card h2 {
+  min-height: 4.8em;
+}
+
+.front-list-grid .title-card .meta {
+  min-height: 1.8em;
+}
+
+.front-list-grid .title-card > p:not(.meta) {
+  min-height: 8.5em;
+}
+
+.front-list-grid .title-card h3 {
+  min-height: auto;
+  margin-top: 0;
+}
