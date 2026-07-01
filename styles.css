@@ -647,3 +647,17 @@ footer {
 .front-list-grid .title-card .meta a:hover {
   color: var(--gold);
 }
+/* Front List card alignment */
+
+.front-list-grid .title-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.front-list-grid .card-header {
+  min-height: 315px;
+}
+
+.front-list-grid .card-summary {
+  min-height: 150px;
+}
