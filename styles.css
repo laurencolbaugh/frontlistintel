@@ -618,67 +618,105 @@ footer {
     display:flex;
     flex-direction:column;
     padding:30px;
-    height:100%;
 }
 
+/* Badge */
+
 .front-list-grid .badge{
-    align-self:flex-start;
-    margin-bottom:18px;
+    width:100%;
+    margin:0 0 18px;
 }
+
+/* ---------- HEADER ---------- */
 
 .front-list-grid .card-header{
     display:flex;
     flex-direction:column;
     align-items:center;
     text-align:center;
-    height:320px;
 }
 
-.front-list-grid .book-cover{
+/* Book cover */
+
+.front-list-grid .card-header>a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
     width:150px;
     height:220px;
-    object-fit:cover;
     margin-bottom:20px;
 }
 
+.front-list-grid .book-cover{
+    width:auto;
+    height:auto;
+    max-width:150px;
+    max-height:220px;
+    object-fit:contain;
+    margin:0;
+}
+
+/* Title */
+
 .front-list-grid h2{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    height:110px;
+
+    margin:0;
     font-size:1.45rem;
-    margin:0 0 8px;
-    line-height:1.2;
+    line-height:1.18;
 }
 
 .front-list-grid h2 a{
     text-decoration:none;
 }
 
-.front-list-grid h2 a:hover,
-.front-list-grid .meta a:hover{
-    color:var(--gold);
-}
+/* Author */
 
 .front-list-grid .meta{
-    margin-bottom:0;
-    font-size:.9rem;
-}
 
-.front-list-grid .card-summary{
-    flex:1;
+    height:24px;
+
+    margin:12px 0 18px;
+
     display:flex;
     align-items:flex-start;
+    justify-content:center;
+
+    font-size:.88rem;
+}
+
+/* ---------- SUMMARY ---------- */
+
+.front-list-grid .card-summary{
+
+    height:170px;
+
+    overflow:hidden;
 }
 
 .front-list-grid .card-summary p{
     margin:0;
 }
 
+/* ---------- OBSERVATIONS ---------- */
+
 .front-list-grid .card-observations{
-    border-top:1px solid var(--border);
+
+    margin-top:22px;
     padding-top:20px;
-    margin-top:24px;
+
+    border-top:1px solid var(--border);
 }
 
 .front-list-grid .card-observations h3{
-    margin-bottom:12px;
+
+    margin:0 0 14px;
+
+    line-height:1.15;
 }
 
 .front-list-grid ul{
@@ -690,18 +728,24 @@ footer {
     margin-bottom:8px;
 }
 
+.front-list-grid h2 a:hover,
+.front-list-grid .meta a:hover{
+    color:var(--gold);
+}
+
+/* ---------- Mobile ---------- */
+
 @media (max-width:900px){
 
     .front-list-grid{
         grid-template-columns:1fr;
     }
 
-    .front-list-grid .card-header{
-        height:auto;
-    }
-
+    .front-list-grid h2,
+    .front-list-grid .meta,
     .front-list-grid .card-summary{
-        display:block;
+
+        height:auto;
     }
 
 }
