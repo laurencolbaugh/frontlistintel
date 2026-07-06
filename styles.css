@@ -749,3 +749,16 @@ footer {
     }
 
 }
+/* ===== Homepage Featured Card Alignment Fix ===== */
+
+.preview-section .title-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-section .book-cover {
+  width: 150px;
+  height: 220px;
+  object-fit: contain;
+  margin: 0 auto 20px;
+}
