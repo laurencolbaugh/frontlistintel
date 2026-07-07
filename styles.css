@@ -1001,3 +1001,107 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* ===== Archives Index Cards — Fixed Layout ===== */
+
+.archive-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-top: 34px;
+}
+
+.archive-card {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  padding: 26px;
+  box-shadow: 0 8px 18px rgba(15, 34, 53, 0.08);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.archive-card .badge {
+  width: fit-content;
+  height: 28px;
+  margin-bottom: 18px;
+}
+
+.archive-card-cover {
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.archive-card-cover .book-cover {
+  width: auto;
+  max-width: 125px;
+  max-height: 175px;
+  object-fit: contain;
+  margin: 0;
+}
+
+.archive-card-title {
+  height: 78px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.archive-card-title h2 {
+  font-size: 1.45rem;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.archive-card-title h2 a {
+  text-decoration: none;
+}
+
+.archive-card-author {
+  height: 30px;
+}
+
+.archive-card-author .meta {
+  margin: 0;
+}
+
+.archive-card-summary {
+  height: 105px;
+  overflow: hidden;
+}
+
+.archive-card-summary p {
+  margin: 0;
+}
+
+.archive-card-link {
+  margin-top: auto;
+}
+
+.archive-card .text-link {
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.archive-card h2 a:hover,
+.archive-card .text-link:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 900px) {
+  .archive-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-card-title,
+  .archive-card-author,
+  .archive-card-summary {
+    height: auto;
+  }
+}
