@@ -861,3 +861,38 @@ footer {
 .archive-snapshot-table tr:last-child td {
   border-bottom: none;
 }
+/* Archive Timeline */
+
+.archive-timeline{
+    margin-top:2.2rem;
+    text-align:left;
+}
+
+.archive-timeline ul{
+    margin:.6rem 0 0 1rem;
+    padding:0;
+}
+
+.archive-timeline li{
+    margin:.55rem 0;
+    line-height:1.45;
+}
+
+
+/* Archive Snapshot */
+
+.archive-stats{
+    margin:.6rem 0 0;
+    padding:0;
+    list-style:none;
+}
+
+.archive-stats li{
+    margin:.55rem 0;
+    line-height:1.5;
+}
+
+.archive-stats strong{
+    display:inline-block;
+    width:220px;
+}
