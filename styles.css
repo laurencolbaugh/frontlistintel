@@ -947,3 +947,57 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* ===== Archives Index Cards ===== */
+
+.archive-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-top: 34px;
+}
+
+.archive-card {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  padding: 26px;
+  box-shadow: 0 8px 18px rgba(15, 34, 53, 0.08);
+  text-align: left;
+}
+
+.archive-card h2 {
+  font-size: 1.45rem;
+  margin: 18px 0 8px;
+}
+
+.archive-card h2 a,
+.archive-card .text-link {
+  text-decoration: none;
+}
+
+.archive-card h2 a:hover,
+.archive-card .text-link:hover {
+  color: var(--gold);
+}
+
+.archive-card .book-cover {
+  width: auto;
+  max-width: 125px;
+  max-height: 185px;
+  object-fit: contain;
+  margin: 0 auto 20px;
+}
+
+.archive-card .text-link {
+  font-family: Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+@media (max-width: 900px) {
+  .archive-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
