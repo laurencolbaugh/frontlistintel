@@ -762,3 +762,66 @@ footer {
   object-fit: contain;
   margin: 0 auto 20px;
 }
+/* ===== Archive Title Pages ===== */
+
+.archive-header {
+  margin-bottom: 28px;
+}
+
+.archive-header h1 {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  white-space: nowrap;
+}
+
+.archive-dossier {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 28px;
+  align-items: stretch;
+  margin-top: 30px;
+}
+
+.archive-cover-panel,
+.archive-info-panel {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  padding: 28px;
+}
+
+.archive-cover-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.archive-cover {
+  width: auto;
+  max-width: 210px;
+  max-height: 315px;
+  object-fit: contain;
+  margin: 0 auto 24px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.18);
+}
+
+.archive-cover-panel .button {
+  align-self: center;
+}
+
+.archive-info-panel ul {
+  margin: 0 0 22px;
+  padding-left: 20px;
+}
+
+.archive-info-panel li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+  .archive-header h1 {
+    white-space: normal;
+  }
+
+  .archive-dossier {
+    grid-template-columns: 1fr;
+  }
+}
