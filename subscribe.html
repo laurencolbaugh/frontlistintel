@@ -3,11 +3,244 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Founding Reader Access | Front List Intel</title>
+
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* =========================================================
+       FOUNDING READER ACCESS PAGE
+       ========================================================= */
+
+    .founding-page {
+      background: #f7f3ea;
+      color: #102a43;
+    }
+
+    .founding-page main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px 60px;
+    }
+
+    /* HERO */
+
+    .founding-hero {
+      text-align: center;
+      padding: 55px 20px 48px;
+    }
+
+    .founding-hero .eyebrow {
+      margin: 0 0 18px;
+      color: #c27b00;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .founding-hero h1 {
+      margin: 0 0 18px;
+      color: #102a43;
+      font-size: clamp(42px, 5vw, 58px);
+      line-height: 1.05;
+    }
+
+    .founding-hero .hero-intro {
+      max-width: 720px;
+      margin: 0 auto 22px;
+      font-size: 17px;
+      line-height: 1.55;
+    }
+
+    .founding-hero .hero-note {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .founding-button {
+      display: inline-block;
+      padding: 18px 30px;
+      background: #c98200;
+      color: #ffffff;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .founding-button:hover {
+      background: #a96c00;
+      transform: translateY(-1px);
+    }
+
+    /* INFORMATION CARDS */
+
+    .founding-info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      margin: 0 auto 32px;
+    }
+
+    .founding-info-card {
+      min-height: 285px;
+      padding: 34px 38px;
+      border: 1px solid #ddc89f;
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    .founding-card-header {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      gap: 18px;
+      align-items: start;
+      margin-bottom: 22px;
+    }
+
+    .founding-card-icon {
+      width: 62px;
+      height: 62px;
+      color: #c27b00;
+    }
+
+    .founding-card-icon svg {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .founding-card-copy .eyebrow {
+      margin: 2px 0 8px;
+      color: #c27b00;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .founding-card-copy h2 {
+      margin: 0;
+      color: #102a43;
+      font-size: 28px;
+      line-height: 1.15;
+    }
+
+    .founding-list {
+      margin: 0;
+      padding-left: 26px;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .founding-list > li {
+      margin-bottom: 13px;
+      padding-left: 3px;
+    }
+
+    .founding-list .report-sublist {
+      margin-top: 7px;
+      padding-left: 27px;
+    }
+
+    .founding-list .report-sublist li {
+      margin-bottom: 4px;
+    }
+
+    /* FINAL CTA BAND */
+
+    .founding-cta {
+      margin-top: 30px;
+      padding: 38px 40px 40px;
+      background: #102a43;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .founding-cta .eyebrow {
+      margin: 0 0 12px;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .founding-cta h2 {
+      margin: 0 0 14px;
+      color: #ffffff;
+      font-size: clamp(30px, 4vw, 40px);
+      line-height: 1.15;
+    }
+
+    .founding-cta p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 850px) {
+      .founding-page main {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .founding-info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .founding-info-card {
+        min-height: 0;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .founding-hero {
+        padding-top: 40px;
+      }
+
+      .founding-card-header {
+        grid-template-columns: 52px 1fr;
+      }
+
+      .founding-card-icon {
+        width: 46px;
+        height: 46px;
+      }
+
+      .founding-info-card {
+        padding: 28px 24px;
+      }
+
+      .founding-card-copy h2 {
+        font-size: 24px;
+      }
+
+      .founding-cta {
+        padding: 34px 24px;
+      }
+    }
+  </style>
 </head>
 
-<body>
+<body class="founding-page">
 
 <nav>
   <a href="index.html">Home</a>
@@ -19,64 +252,25 @@
 
 <main>
 
-  <section class="page-header">
-    <p class="eyebrow">Early Access</p>
-    <h1>Founding Reader Access</h1>
-    <p>
-      Join the early-access list to receive the weekly Front List Intel report at no cost during our launch period.
-    </p>
-  </section>
+  <!-- FOUNDING READER HERO -->
 
-  <section class="section">
-    <div class="info-grid">
+  <section class="founding-hero">
 
-      <div class="info-box">
-        <p class="eyebrow">Weekly Report</p>
-        <h2>What Founding Readers Receive</h2>
-
-        <ul>
-          <li>Weekly Front List Intel report delivered by email</li>
-          <li>
-            Report includes:
-            <ul>
-              <li>New Discoveries</li>
-              <li>Featured This Week</li>
-              <li>Continuing Coverage</li>
-              <li>Newly Archived titles</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="info-box">
-        <p class="eyebrow">Industry Intelligence</p>
-        <h2>Built for Industry Use</h2>
-
-        <ul>
-          <li>Objective momentum tracking</li>
-          <li>Opportunity observations</li>
-          <li>Weekly publication cadence</li>
-          <li>Early access during the Front List Intel launch period</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="section section-narrow">
     <p class="eyebrow">Founding Reader Access</p>
-    <h2>Join the Front List</h2>
 
-    <p>
-      Sign up to become a Founding Reader and begin receiving Front List Intel's weekly publishing intelligence report.
+    <h1>Join the Front List</h1>
+
+    <p class="hero-intro">
+      Sign up to become a Founding Reader and begin receiving Front List Intel's
+      weekly publishing intelligence report.
     </p>
 
-    <p>
+    <p class="hero-note">
       The form will open in a new browser tab and takes less than a minute to complete.
     </p>
 
     <a
-      class="button button-gold"
+      class="founding-button"
       href="https://docs.google.com/forms/d/e/1FAIpQLSdJRje1JRsbLLOfq2PCIN35RWlV3_NrkkFE2VZ-unfyESbSHw/viewform"
       target="_blank"
       rel="noopener">
@@ -85,21 +279,112 @@
 
   </section>
 
-  <section class="cta-band">
+
+  <!-- INFORMATION CARDS -->
+
+  <section class="founding-info-grid">
+
+    <!-- WEEKLY REPORT -->
+
+    <div class="founding-info-card">
+
+      <div class="founding-card-header">
+
+        <div class="founding-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64">
+            <rect x="6" y="14" width="52" height="36" rx="1"></rect>
+            <path d="M7 16l25 21 25-21"></path>
+            <path d="M7 49l18-17"></path>
+            <path d="M57 49L39 32"></path>
+          </svg>
+        </div>
+
+        <div class="founding-card-copy">
+          <p class="eyebrow">Weekly Report</p>
+          <h2>What Founding Readers Receive</h2>
+        </div>
+
+      </div>
+
+      <ul class="founding-list">
+
+        <li>
+          Weekly Front List Intel report delivered by email
+        </li>
+
+        <li>
+          Report includes:
+          <ul class="report-sublist">
+            <li>New Discoveries</li>
+            <li>Featured This Week</li>
+            <li>Continuing Coverage</li>
+            <li>Newly Archived titles</li>
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- INDUSTRY INTELLIGENCE -->
+
+    <div class="founding-info-card">
+
+      <div class="founding-card-header">
+
+        <div class="founding-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64">
+            <circle cx="29" cy="34" r="21"></circle>
+            <circle cx="29" cy="34" r="13"></circle>
+            <circle cx="29" cy="34" r="5"></circle>
+            <path d="M29 34L48 15"></path>
+            <path d="M43 12l7-6 2 7 7 2-6 7-8-2z"></path>
+          </svg>
+        </div>
+
+        <div class="founding-card-copy">
+          <p class="eyebrow">Industry Intelligence</p>
+          <h2>Built for Industry Use</h2>
+        </div>
+
+      </div>
+
+      <ul class="founding-list">
+        <li>Objective momentum tracking</li>
+        <li>Opportunity observations</li>
+        <li>Weekly publication cadence</li>
+        <li>Early access during the Front List Intel launch period</li>
+      </ul>
+
+    </div>
+
+  </section>
+
+
+  <!-- FINAL EARLY ACCESS BAND -->
+
+  <section class="founding-cta">
+
     <p class="eyebrow">Early Access</p>
-    <h2>Help Shape Front List Intel</h2>
+
+    <h2>Be Among the First to Receive Front List Intel</h2>
 
     <p>
-      Founding Reader Access is designed to put Front List Intel into the hands of publishing professionals while the service is still in its launch period. Your readership helps us refine the report around real-world industry use.
+      Founding Readers receive Front List Intel at no cost during our launch period
+      while we continue refining the report with real-world industry use.
     </p>
+
   </section>
 
 </main>
+
 
 <footer>
   <p>
     &copy; 2026 Front List Intel. All rights reserved.
   </p>
+
   <p>
     <a href="privacy.html">Privacy Policy</a>
   </p>
