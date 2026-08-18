@@ -1105,3 +1105,8 @@ footer {
     height: auto;
   }
 }
+/* ===== Subscribe Card Alignment ===== */
+
+.info-box h2 {
+  min-height: 2.3em;
+}
