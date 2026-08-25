@@ -1110,3 +1110,21 @@ footer {
 .founding-card-header {
   min-height: 92px;
 }
+.archive-back-link {
+  grid-column: 1 / -1;
+  margin-bottom: -5px;
+}
+
+.archive-back-link a {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #c27b00;
+}
+
+.archive-back-link a:hover {
+  text-decoration: underline;
+}
