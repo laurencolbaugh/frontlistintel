@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /archive-template.html
+
+Sitemap: https://frontlistintel.com/sitemap.xml
