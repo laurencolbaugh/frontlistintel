@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[TITLE] | Front List Archives</title>
+  <title>[TITLE] by [AUTHOR] | Front List Archives</title>
+  <meta name="description" content="[META_DESCRIPTION]">
+  <link rel="canonical" href="https://frontlistintel.com/[ARCHIVE_FILENAME]">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -12,7 +14,6 @@
 <nav>
   <a href="index.html">Home</a>
   <a href="front-list.html">Front List</a>
-  <a href="archives.html">Archives</a>
   <a href="methodology.html">Methodology</a>
   <a href="subscribe.html">Subscribe</a>
 </nav>
@@ -22,7 +23,11 @@
 <section class="page-header archive-header">
   <p class="eyebrow">Archived Title</p>
   <h1><em>[TITLE]</em></h1>
-  <p>[AUTHOR]</p>
+  <p>by [AUTHOR]</p>
+
+  <p class="archive-back">
+    <a href="archives.html">← Back to Archives</a>
+  </p>
 </section>
 
 <section class="section archive-dossier">
@@ -30,7 +35,7 @@
   <div class="archive-cover-panel">
     <img class="archive-cover"
          src="[COVER_URL]"
-         alt="Cover of [TITLE]">
+         alt="Cover of [TITLE] by [AUTHOR]">
 
     <a href="[AFFILIATE_LINK]"
        class="button button-gold"
