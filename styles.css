@@ -1034,8 +1034,9 @@ footer {
   }
 
   .home-hero img {
-    height: 320px;
-  }
+  height: 320px;
+  object-position: right center;
+}
 
   .home-hero-copy {
     position: static;
