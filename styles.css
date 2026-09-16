@@ -40,7 +40,12 @@ a {
    MAIN NAVIGATION
    ========================================================= */
 
+body > nav,
 .main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   max-width: 1100px;
   margin: 0 auto;
   padding: 22px 24px;
@@ -60,19 +65,22 @@ a {
   text-transform: uppercase;
 }
 
-body:not(.front-list-page) > .main-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
+body > nav a,
 .main-nav a {
   text-decoration: none;
   color: var(--navy);
 }
 
+body > nav a:hover,
 .main-nav a:hover {
   color: var(--gold);
+}
+
+/* The Front List uses one combined sticky header,
+   so its main nav does not need to be independently sticky. */
+
+.front-list-sticky-header .main-nav {
+  position: static;
 }
 /* =========================================================
    FRONT LIST STICKY HEADER / SUB-NAVIGATION
@@ -1264,7 +1272,8 @@ footer {
 
 @media (max-width: 850px) {
 
- .main-nav {
+ body > nav,
+.main-nav {
   flex-wrap: wrap;
   gap: 18px;
 }
