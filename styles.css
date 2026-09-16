@@ -40,11 +40,7 @@ a {
    MAIN NAVIGATION
    ========================================================= */
 
-nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
+.main-nav {
   max-width: 1100px;
   margin: 0 auto;
   padding: 22px 24px;
@@ -64,15 +60,87 @@ nav {
   text-transform: uppercase;
 }
 
-nav a {
+body:not(.front-list-page) > .main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-nav a {
   text-decoration: none;
   color: var(--navy);
 }
 
-nav a:hover {
+.main-nav a:hover {
+  color: var(--gold);
+}
+/* =========================================================
+   FRONT LIST STICKY HEADER / SUB-NAVIGATION
+   ========================================================= */
+
+.front-list-sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: var(--ivory);
+  box-shadow: 0 2px 8px rgba(15, 34, 53, 0.08);
+}
+
+.front-list-sticky-header .main-nav {
+  box-shadow: none;
+}
+
+.front-list-page-title {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 24px 10px;
+
+  background: var(--ivory);
+  text-align: center;
+}
+
+.front-list-page-title h1 {
+  margin: 0;
+
+  color: var(--navy);
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+  line-height: 1.1;
+}
+
+.front-list-subnav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 11px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--cream);
+
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.front-list-subnav a {
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.front-list-subnav a:hover {
   color: var(--gold);
 }
 
+.front-list-subnav span {
+  color: var(--gold);
+}
 
 /* =========================================================
    GLOBAL LAYOUT / TYPOGRAPHY
@@ -521,7 +589,49 @@ li {
   margin: 0 auto;
 }
 
+/* =========================================================
+   FRONT LIST SECTION SPACING / ARCHIVES CALLOUT
+   ========================================================= */
 
+.front-list-page main {
+  padding-top: 34px;
+}
+
+.front-list-page .front-list-grid {
+  margin-bottom: 72px;
+}
+
+.front-list-page .sample-report {
+  margin-bottom: 72px;
+}
+
+.archives-callout {
+  margin: 0 0 72px;
+  padding: 42px 38px;
+
+  background: var(--cream);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 18px rgba(15, 34, 53, 0.06);
+
+  text-align: center;
+}
+
+.archives-callout h2 {
+  margin-bottom: 12px;
+}
+
+.archives-callout > p:not(.eyebrow) {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+}
+
+#this-week,
+#sample-report,
+#archives {
+  scroll-margin-top: 190px;
+}
 /* =========================================================
    FRONT LIST CARDS
    ========================================================= */
@@ -828,7 +938,26 @@ li {
 .archive-cover-panel .button {
   align-self: center;
 }
+.archive-back-to-current {
+  margin: 24px 0 0;
+  text-align: center;
+}
 
+.archive-back-to-current a {
+  color: var(--gold);
+
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.archive-back-to-current a:hover {
+  color: var(--gold-dark);
+  text-decoration: underline;
+}
 
 /* Archive Timeline */
 
@@ -1135,10 +1264,27 @@ footer {
 
 @media (max-width: 850px) {
 
-  nav {
-    flex-wrap: wrap;
-    gap: 18px;
-  }
+ .main-nav {
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.front-list-subnav {
+  gap: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.front-list-page-title {
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+#this-week,
+#sample-report,
+#archives {
+  scroll-margin-top: 210px;
+}
 
   main {
     padding-top: 28px;
