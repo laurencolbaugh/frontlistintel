@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,28 +9,32 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="front-list-page">
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="front-list.html">Front List</a>
-  <a href="methodology.html">Methodology</a>
-  <a href="subscribe.html">Subscribe</a>
-</nav>
+<header class="front-list-sticky-header">
+
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="front-list.html">Front List</a>
+    <a href="methodology.html">Methodology</a>
+    <a href="subscribe.html">Subscribe</a>
+  </nav>
+
+  <div class="front-list-page-title">
+    <h1>The Front List</h1>
+  </div>
+
+  <nav class="front-list-subnav" aria-label="Front List sections">
+    <a href="#this-week">This Week</a>
+    <span aria-hidden="true">·</span>
+    <a href="#sample-report">Sample Report</a>
+    <span aria-hidden="true">·</span>
+    <a href="#archives">Archives</a>
+  </nav>
+
+</header>
 
 <main>
-
-<section class="page-header">
-  <h1>The Front List</h1>
-</section>
-
-<nav class="front-list-subnav" aria-label="Front List sections">
-  <a href="#this-week">This Week</a>
-  <span aria-hidden="true">·</span>
-  <a href="#sample-report">Sample Report</a>
-  <span aria-hidden="true">·</span>
-  <a href="#archives">Archives</a>
-</nav>
 
 <section class="featured-intro" id="this-week">
   <p class="eyebrow issue-week">2026-W37</p>
@@ -212,8 +215,9 @@
 
 </section>
 
-<section class="featured-intro archives-intro" id="archives">
-  <p class="eyebrow">Historical Intelligence</p>
+<section class="archives-callout" id="archives">
+
+  <p class="eyebrow">Historical Data</p>
 
   <h2>Explore the Front List Archives</h2>
 
@@ -225,6 +229,7 @@
   <a class="button button-gold" href="archives.html">
     Explore the Archives
   </a>
+
 </section>
 
 <section class="cta-band">
@@ -257,4 +262,3 @@
 
 </body>
 </html>
-```
