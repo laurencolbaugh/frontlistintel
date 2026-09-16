@@ -215,9 +215,25 @@ li {
 }
 
 .page-header {
-  max-width: 760px;
+  max-width: 820px;
   margin: 20px auto 42px;
   text-align: center;
+}
+
+.page-header h1 {
+  margin: 0 0 14px;
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+  line-height: 1.1;
+}
+
+.page-header > .eyebrow {
+  margin-bottom: 10px;
+}
+
+.page-header > p:not(.eyebrow):not(.archive-back-to-current) {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .issue-week {
