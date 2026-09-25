@@ -35,6 +35,53 @@
   </script>
 
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .archive-header {
+      width: 100%;
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .archive-header h1,
+    .archive-header > p {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .archive-author-link {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .archive-cover-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .archive-cover-actions .button {
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .archive-cover-actions .button-secondary {
+      background: #33475b;
+      color: #ffffff;
+    }
+
+    .archive-panel-back {
+      text-align: center;
+      margin: 14px 0 22px;
+    }
+  </style>
 </head>
 
 <body>
@@ -50,8 +97,19 @@
 
 <section class="page-header archive-header">
   <p class="eyebrow">Archived Title</p>
+
   <h1><em>[TITLE]</em></h1>
-  <p>by [AUTHOR]</p>
+
+  <p>
+    by
+    <a
+      class="archive-author-link"
+      href="[AUTHOR_AFFILIATE_LINK]"
+      target="_blank"
+      rel="noopener">
+      [AUTHOR]
+    </a>
+  </p>
 
   <p class="archive-back">
     <a href="archives.html">← Back to Archives</a>
@@ -61,16 +119,36 @@
 <section class="section archive-dossier">
 
   <div class="archive-cover-panel">
-    <img class="archive-cover"
-         src="[COVER_URL]"
-         alt="Cover of [TITLE] by [AUTHOR]">
 
-    <a href="[AFFILIATE_LINK]"
-       class="button button-gold"
-       target="_blank"
-       rel="noopener">
-       View on Amazon
-    </a>
+    <img
+      class="archive-cover"
+      src="[COVER_URL]"
+      alt="Cover of [TITLE] by [AUTHOR]"
+    >
+
+    <div class="archive-cover-actions">
+
+      <a
+        href="[AFFILIATE_LINK]"
+        class="button button-gold"
+        target="_blank"
+        rel="noopener">
+        View on Amazon
+      </a>
+
+      <a
+        href="[AUTHOR_AFFILIATE_LINK]"
+        class="button button-secondary"
+        target="_blank"
+        rel="noopener">
+        View Author Page
+      </a>
+
+    </div>
+
+    <p class="archive-panel-back">
+      <a href="archives.html">← Back to Archives</a>
+    </p>
 
     <div class="archive-timeline">
       <p class="eyebrow">Timeline</p>
@@ -80,6 +158,7 @@
         <li><strong>[WEEK]</strong> — Archived</li>
       </ul>
     </div>
+
   </div>
 
   <div class="archive-info-panel">
@@ -122,9 +201,11 @@
   <p>
     Front List Intel participates in the Amazon Associates Program and may earn commissions from qualifying purchases made through affiliate links, at no additional cost to you.
   </p>
+
   <p>
     &copy; 2026 Front List Intel. All rights reserved.
   </p>
+
   <p>
     <a href="privacy.html">Privacy Policy</a>
   </p>
