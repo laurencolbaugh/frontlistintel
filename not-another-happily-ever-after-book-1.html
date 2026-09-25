@@ -35,6 +35,49 @@
   </script>
 
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .archive-header {
+      text-align: center;
+    }
+
+    .archive-header h1 {
+      text-align: center;
+    }
+
+    .archive-header > p {
+      text-align: center;
+    }
+
+    .archive-author-link {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .archive-cover-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .archive-cover-actions .button {
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .archive-cover-actions .button-secondary {
+      background: #33475b;
+      color: #ffffff;
+    }
+
+    .archive-panel-back {
+      text-align: center;
+      margin: 14px 0 22px;
+    }
+  </style>
 </head>
 
 <body>
@@ -50,8 +93,19 @@
 
 <section class="page-header archive-header">
   <p class="eyebrow">Archived Title</p>
+
   <h1><em>Not Another Happily Ever After: Book 1</em></h1>
-  <p>by A.R. Schilling</p>
+
+  <p>
+    by
+    <a
+      class="archive-author-link"
+      href="https://amzn.to/4h8wiXl"
+      target="_blank"
+      rel="noopener">
+      A.R. Schilling
+    </a>
+  </p>
 
   <p class="archive-back">
     <a href="archives.html">← Back to Archives</a>
@@ -65,12 +119,27 @@
          src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/91Y4hHhyH4L._SL1500_.jpg"
          alt="Cover of Not Another Happily Ever After: Book 1 by A.R. Schilling">
 
-    <a href="https://amzn.to/4xbkTe0"
-       class="button button-gold"
-       target="_blank"
-       rel="noopener">
-       View on Amazon
-    </a>
+    <div class="archive-cover-actions">
+
+      <a href="https://amzn.to/4xbkTe0"
+         class="button button-gold"
+         target="_blank"
+         rel="noopener">
+        View on Amazon
+      </a>
+
+      <a href="https://amzn.to/4h8wiXl"
+         class="button button-secondary"
+         target="_blank"
+         rel="noopener">
+        View Author Page
+      </a>
+
+    </div>
+
+    <p class="archive-panel-back">
+      <a href="archives.html">← Back to Archives</a>
+    </p>
 
     <div class="archive-timeline">
       <p class="eyebrow">Timeline</p>
